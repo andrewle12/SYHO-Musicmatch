@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Added link to the jQuery Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Ask Word Smiths</title>
+</head>
+
+<body>
+  <!-- initial container-cv -->
+  <main class="container">
+    <div class="row">
+      <form id="search-1" name="input-form">
+        <div class="input-field col s6 offset-s3">
+          <input type="text" id="search-field" required="true" required="">
+          <label for="search-field">Search artist, song, or lyric</label>
+          <button class="btn grey lighten-5 waves-effect waves-red" id="search-button" type="submit">Search</button>
+        </div>
+      </form>
+    </div>
+    <h1 class="center-align"><strong>Sing Your Heart Out</strong></h1>
+    <div class="row" id="g-one">
+      <!-- initial search bar -->
+      <div class="modal hide card row" id="search-returns">
+        <div class="modal-content col s12 center-align">
+          <div class="row">
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s6"><a href="#q-artists" class="active">Artist</a></li>
+                <li class="tab col s6"><a href="#q-track">Track</a></li>
+              </ul>
+            </div>
+            <div id="option-area-artist" class="col s12">
+              <table class="center-align">
+                <tbody id="artist-table">
+
+                </tbody>
+              </table>
+
+            </div>
+            <div id="option-area-track" class="col s12">
+              <table>
+                <tbody id="track-table">
+
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- favorites section -->
+      <div class="row">
+        <div class="col s12" id="g-two">
+          <div class="card col s8 offset-s2" id="favorites">
+            <div class="card-title">
+              <h5 class="center-align">Favorites</h5>
+              <span placeholder="Save your Favorites for later"></span>
+            </div>
+            <div class="card-content">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main page container-cv -->
+    <!-- top row-cv -->
+    <div class="row hide" id="top-3">
+      <!-- youtube column-cv -->
+      <div class="col s8 card" id="youtube">
+        <div id="videoDiv">
+          <iframe id="video" width="560" height="315" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <a class="btn-floating halfway-fab waves-effect waves-light red" type="submit" value="Did not Work" id="noWork"><i
+            class="material-icons">skip_next</i></a>
+      </div>
+      <div class="col s4 card">
+          <div class="card-content center-align" id="lyrics"></div>
+        </div>
+    </div>
+
+
+  </main>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s1">
+          <div>
+            <ul id="slide-out" class="sidenav">
+              <li>
+                <div class="user-view">
+                  <div class="background">
+                    <img src="./assets/images/favorites-side-crop.jpg">
+                  </div>
+                  <a href="#name"><span class="white-text">
+                      <h4>Favorites</h4>
+                    </span></a>
+                </div>
+              </li>
+              <li><a href="#!" id="favorite-button"><i class="material-icons">cloud</i>Add to Favorites</a></li>
+            </ul>
+            <a class="btn-floating btn-large waves-effect waves-light red sidenav-trigger" data-target="slide-out"><i
+                class="material-icons">favorite_border</i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!--MusixMatch Javascript-->
+  <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/musixmatch.js"></script>
+  <script type="text/javascript" src="assets/javascript/youtube.js"></script>
+  <script type="text/javascript" src="assets/javascript/db.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+    $(document).ready(function () {
+      $('.tabs').tabs();
+    });
+  </script>
+
+
+</body>
+
+</html>
