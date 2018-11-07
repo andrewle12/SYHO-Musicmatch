@@ -1,10 +1,10 @@
 var config = {
-    apiKey: "AIzaSyDiH2pvG4VEthb6CCovkPCrTKFADidHpt8",
-    authDomain: "project1-ac9b6.firebaseapp.com",
-    databaseURL: "https://project1-ac9b6.firebaseio.com",
-    projectId: "project1-ac9b6",
-    storageBucket: "project1-ac9b6.appspot.com",
-    messagingSenderId: "1036633980762"
+    apiKey: "###",
+    authDomain: "musicmatch-api.firebaseapp.com",
+    databaseURL: "https://musicmatch-api.firebaseio.com",
+    projectId: "musicmatch-api",
+    storageBucket: "",
+    messagingSenderId: "970010529438"
 };
 firebase.initializeApp(config);
 
