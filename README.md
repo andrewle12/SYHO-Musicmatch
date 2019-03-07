@@ -2,7 +2,7 @@
 
 ## Description
 
-An app where users can search for their favorite songs and have the music video and lyrics side-by-side.
+An app where users can search for their favorite songs and have the music video and lyrics side-by-side. The top result from Youtube will be returned as the music video. Users can cycle through to the next top result by clicking the small arrow button underneath the video. The lyrics are gathered through the MusicMatch API.
 
 ## Technologies
 
