@@ -57,6 +57,9 @@ database.ref().on("child_added", function(childSnapshot) {
   let favTrack = childSnapshot.val().track;
   let key = childSnapshot.key;
   let trackId = childSnapshot.val().trackid;
+  let remove = $("<a>");
+  remove.addClass("btn-floating btn-small waves-effect waves-light red");
+  remove.text("X");
 
   let favListItem = $("<li>");
   let favTag = $("<a>");
@@ -67,6 +70,7 @@ database.ref().on("child_added", function(childSnapshot) {
   favTag.attr("data-key", key);
   favTag.text(favArtist + " - " + favTrack);
   favListItem.append(favTag);
+  favListItem.append(remove);
 
   // $('#slide-out').append(favListItem);
   $("#favorites").append(favListItem);
