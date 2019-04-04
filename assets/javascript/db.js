@@ -59,6 +59,7 @@ database.ref().on("child_added", function(childSnapshot) {
   let trackId = childSnapshot.val().trackid;
   let remove = $("<a>");
   remove.addClass("btn-floating btn-small waves-effect waves-light red");
+  remove.attr("data-key", key);
   remove.text("X");
 
   let favListItem = $("<li>");
@@ -74,4 +75,14 @@ database.ref().on("child_added", function(childSnapshot) {
 
   // $('#slide-out').append(favListItem);
   $("#favorites").append(favListItem);
+});
+
+//Remove Button
+$(document).on("click", ".btn-small", function() {
+  let removedKey = $(this).data("key");
+  database
+    .ref()
+    .child(removedKey)
+    .remove();
+  window.location.reload();
 });
