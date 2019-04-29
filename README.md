@@ -25,6 +25,9 @@ The MusicMatch API requires an expensive monthly license to receive the full lyr
 
 Choosing a song from the "Favorites" list will prevent the add favorites sidebar from coming back out when the heart icon is clicked. Current workaround is to refresh the page.
 
-## Author
+## Authors
 
 Andrew Le
+Carl Vega
+Desiree Howell
+Derek Williams

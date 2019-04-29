@@ -43,7 +43,7 @@ database.ref().on("child_added", function(childSnapshot) {
 $(document).on("click", ".favorites-button", function(event) {
   artist = $(this).attr("data-artist");
   track = $(this).attr("data-track");
-  $("#slide-out").hide();
+  // $("#slide-out").hide();
   $("#top-3").removeClass("hide");
   $("#favorites-bar").addClass("hide");
   $("#search-field").val("");
