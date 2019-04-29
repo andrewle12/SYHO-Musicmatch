@@ -21,10 +21,6 @@ An app where users can search for their favorite songs and have the music video 
 
 The MusicMatch API requires an expensive monthly license to receive the full lyrics to any song. As a result, only a portion of the lyrics are displayed in the lyrics bar.
 
-## Known Bugs
-
-Choosing a song from the "Favorites" list will prevent the add favorites sidebar from coming back out when the heart icon is clicked. Current workaround is to refresh the page.
-
 ## Authors
 
 Andrew Le
